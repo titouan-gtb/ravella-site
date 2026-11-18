@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Page introuvable · Ravella</title>
     <meta name="description" content="Cette page n’existe pas." />
+    <meta name="robots" content="noindex" />
     <meta name="theme-color" content="#0B0B10" />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/style.css" />
@@ -14,14 +15,34 @@
     <header class="top">
       <div class="wrap">
         <a class="brand" href="/"><span class="logo" aria-hidden="true">R</span>Ravella</a>
-        <nav aria-label="Principal"><a class="nav-link" href="index.html#comment">Comment ça marche</a><a class="nav-link" href="/partenaires/">Pour les lieux</a><a class="nav-link" href="/aide/">Aide</a><a class="cta" href="index.html#bientot">Bientôt<span class="cta-long"> sur l’App Store</span></a></nav>
+        <nav aria-label="Principal"><a class="nav-link" href="/#comment">Comment ça marche</a><a class="nav-link" href="/partenaires/">Pour les lieux</a><a class="nav-link" href="/aide/">Aide</a><a class="cta" href="/#bientot">Bientôt<span class="cta-long"> sur l’App Store</span></a></nav>
       </div>
     </header>
     <main id="contenu">
-      <article class="page wrap">
+      <article class="page wrap" id="introuvable">
         <h1>Page introuvable</h1>
         <p class="intro">Cette page n’existe pas, ou plus. <a href="/">Retour à l’accueil</a></p>
       </article>
+      <article class="page wrap invite" id="invitation" hidden>
+        <span class="logo invite-logo" aria-hidden="true">R</span>
+        <p class="eyebrow-inv" data-sortie="Un pote veut te montrer une sortie" data-invite="Un pote t’invite à rejoindre Ravella">Invitation</p>
+        <h1>Tu as une invitation sur Ravella</h1>
+        <p class="intro lead">Ravella, c’est l’appli gratuite pour trouver des sorties, monter des plans avec tes potes et rencontrer du monde. Réservée aux 18 ans et plus.</p>
+        <button class="store" type="button" disabled aria-disabled="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M11 18.5h2"/></svg>Bientôt sur l’App Store</button>
+        <p class="invite-home"><a href="/">Découvrir Ravella →</a></p>
+      </article>
+      <script>
+        (function () {
+          var m = location.pathname.match(/^\/(sortie|invite)\//);
+          if (!m) return;
+          document.getElementById('introuvable').hidden = true;
+          var inv = document.getElementById('invitation');
+          inv.hidden = false;
+          var kicker = inv.querySelector('.eyebrow-inv');
+          kicker.textContent = kicker.getAttribute('data-' + m[1]);
+          document.title = 'Invitation · Ravella';
+        })();
+      </script>
     </main>
     <footer class="foot">
       <div class="wrap">

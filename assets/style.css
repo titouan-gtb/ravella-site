@@ -538,3 +538,33 @@ mark.trou {
     gap: 24px;
   }
 }
+
+/* Page d'invitation (liens de partage de l'appli, servie par 404.html) */
+.invite {
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+.invite-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 17px;
+  font-size: 2.4rem;
+  margin: 0 auto 24px;
+}
+.eyebrow-inv {
+  margin: 0 0 12px;
+  color: var(--signal);
+  font-weight: 600;
+}
+.invite .lead {
+  margin: 16px auto 0;
+  max-width: 30em;
+}
+.invite .store {
+  margin-top: 28px;
+}
+.invite-home {
+  margin-top: 20px;
+  font-weight: 600;
+}
