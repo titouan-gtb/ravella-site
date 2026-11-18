@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ravella · Sorties et activités entre potes</title>
+    <meta name="description" content="Ravella, l'appli gratuite pour trouver des sorties et des activités, monter des plans avec tes potes et rencontrer du monde. 18 ans et plus." />
+    <meta name="theme-color" content="#0B0B10" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/home.css" />
+    <script src="assets/home.js" defer></script>
+  </head>
+  <body class="home">
+    <a class="skip" href="#contenu">Aller au contenu</a>
+    <header class="top">
+      <div class="wrap wide">
+        <a class="brand" href="index.html"><span class="logo" aria-hidden="true">R</span>Ravella</a>
+        <nav aria-label="Principal"><a class="nav-link" href="index.html#comment">Comment ça marche</a><a class="nav-link" href="partenaires/index.html">Pour les lieux</a><a class="nav-link" href="aide/index.html">Aide</a><a class="cta" href="index.html#bientot">Bientôt<span class="cta-long"> sur l’App Store</span></a></nav>
+      </div>
+    </header>
+    <main id="contenu">
+      <section class="hero2" aria-labelledby="titre">
+        <div class="glow" aria-hidden="true"></div>
+        <div class="wrap wide hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow">L’appli des sorties entre potes</p>
+            <h1 id="titre">Ce soir, on sort.<em>Avec qui tu veux.</em></h1>
+            <p class="lead">Propose un plan à ta bande, trouve une sortie dans ta ville, rencontre de nouvelles têtes. Gratuite, réservée aux 18 ans et plus.</p>
+            <div class="hero-actions">
+              <button class="store" type="button" disabled aria-disabled="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M11 18.5h2"/></svg><span><small>Bientôt sur</small>l’App Store</span></button>
+              <a class="ghost" href="#comment">Comment ça marche <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+          <div class="hero-phones" aria-hidden="true">
+            <div class="iphone back">
+                <img src="assets/img/sondage.webp" width="600" height="1304" alt="" fetchpriority="high" />
+              </div>
+            <div class="iphone front">
+                <img src="assets/img/accueil.webp" width="600" height="1304" alt="" fetchpriority="high" />
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="promises">
+        <ul class="wrap wide">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Gratuite</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>18 ans et plus</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Sans pub de régie</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Données jamais revendues</li>
+        </ul>
+      </div>
+
+      <section class="block" aria-labelledby="stories-titre">
+        <div class="wrap wide">
+          <div class="block-head">
+            <div>
+              <h2 id="stories-titre" class="reveal">Toute la sortie, au même endroit</h2>
+              <p class="block-sub reveal">De l’idée lancée dans le groupe aux photos du lendemain.</p>
+            </div>
+            <div class="row-nav" data-for="stories">
+              <button type="button" class="round" data-dir="-1" aria-label="Cartes précédentes"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+              <button type="button" class="round" data-dir="1" aria-label="Cartes suivantes"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+            </div>
+          </div>
+        </div>
+        <ul class="stories" id="stories" tabindex="0" aria-label="Ce que tu fais avec Ravella">
+            <li class="story reveal" style="--d:0ms">
+              <div class="photo ph-sport" role="img" aria-label="Des potes qui jouent au volley sur la plage" style="background-image:url(assets/img/photos/story-plan.webp)"></div>
+              <div class="story-body">
+                <span class="story-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 10 14"/><path d="m21 3-7 18-4-7-7-4z"/></svg></span>
+                <h3>Propose un plan</h3>
+                <p>Foot jeudi 19 h ? Lance l’idée, ta bande répond en un geste.</p>
+              </div>
+            </li>
+            <li class="story reveal" style="--d:70ms">
+              <div class="photo ph-fun" role="img" aria-label="Une partie de jeu de société entre potes" style="background-image:url(assets/img/photos/story-sondage.webp)"></div>
+              <div class="story-body">
+                <span class="story-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+                <h3>Mets la bande d’accord</h3>
+                <p>Un sondage, deux options, la majorité tranche. Fini les 200 messages.</p>
+              </div>
+            </li>
+            <li class="story reveal" style="--d:140ms">
+              <div class="photo ph-culture" role="img" aria-label="Des amis qui visitent une expo" style="background-image:url(assets/img/photos/story-sortie.webp)"></div>
+              <div class="story-body">
+                <span class="story-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>
+                <h3>Rejoins une sortie</h3>
+                <p>Expo, concert, rando : vois ce qui se passe dans ta ville et rejoins le groupe.</p>
+              </div>
+            </li>
+            <li class="story reveal" style="--d:210ms">
+              <div class="photo ph-food" role="img" aria-label="Un groupe de potes qui rit sur une couverture de pique-nique" style="background-image:url(assets/img/photos/story-rencontre.webp)"></div>
+              <div class="story-body">
+                <span class="story-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20c.6-3 3-5 6-5s5.4 2 6 5M14.5 15.2c.5-.1 1-.2 1.5-.2 3 0 5.4 2 6 5"/></svg></span>
+                <h3>Rencontre du monde</h3>
+                <p>Les plans ouverts sont faits pour ça : tu viens seul, tu repars avec des potes.</p>
+              </div>
+            </li>
+            <li class="story reveal" style="--d:280ms">
+              <div class="photo ph-art" role="img" aria-label="Des amies qui prennent un selfie souvenir" style="background-image:url(assets/img/photos/story-souvenirs.webp)"></div>
+              <div class="story-body">
+                <span class="story-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg></span>
+                <h3>Garde tes Souvenirs</h3>
+                <p>Les photos de la sortie, partagées avec ceux qui étaient là.</p>
+              </div>
+            </li>
+        </ul>
+      </section>
+
+      <section class="block" id="comment" aria-labelledby="comment-titre">
+        <div class="wrap wide how-grid">
+          <div>
+            <h2 id="comment-titre" class="reveal">Comment ça marche</h2>
+            <p class="block-sub reveal">Trois étapes, et la soirée est lancée.</p>
+            <ol class="steps">
+              <li class="step reveal" style="--d:0ms">
+                <span class="step-num" aria-hidden="true">1</span>
+                <div><h3>Crée ton compte</h3><p>Un e-mail, un code, ta date de naissance. Une minute, pas plus.</p></div>
+              </li>
+              <li class="step reveal" style="--d:90ms">
+                <span class="step-num" aria-hidden="true">2</span>
+                <div><h3>Trouve ou lance un plan</h3><p>Parcours les sorties de ta ville, ou propose la tienne à tes potes.</p></div>
+              </li>
+              <li class="step reveal" style="--d:180ms">
+                <span class="step-num" aria-hidden="true">3</span>
+                <div><h3>Retrouvez-vous</h3><p>Calez les détails dans la conversation de la sortie, puis partagez vos Souvenirs.</p></div>
+              </li>
+            </ol>
+          </div>
+          <figure class="showcase reveal" aria-roledescription="carrousel" aria-label="Écrans de l’appli">
+            <div class="iphone big" data-carousel>
+              <div class="slides">
+                  <img class="slide is-on" src="assets/img/accueil.webp" width="600" height="1304" alt="L’accueil : les sorties de ce soir, la recherche et les catégories." loading="lazy" decoding="async" />
+                  <img class="slide" src="assets/img/plan.webp" width="600" height="1304" alt="L’écran « Lance ton plan » : un titre, une catégorie, et c’est gratuit." loading="lazy" decoding="async" />
+                  <img class="slide" src="assets/img/sondage.webp" width="600" height="1304" alt="Une conversation de bande avec un sondage : ciné en plein air ou escape game." loading="lazy" decoding="async" />
+                  <img class="slide" src="assets/img/fiche.webp" width="600" height="1304" alt="La fiche d’une sortie : date, lieu, qui y va, bouton « Je participe »." loading="lazy" decoding="async" />
+                  <img class="slide" src="assets/img/filtres.webp" width="600" height="1304" alt="Les filtres : type d’activité, prix, distance, et « Où vont mes potes »." loading="lazy" decoding="async" />
+              </div>
+            </div>
+            <figcaption>
+              <span class="slide-caption" aria-live="polite">L’accueil : ce qui se passe ce soir</span>
+              <span class="dots"><button type="button" class="dot is-on" aria-label="L’accueil : ce qui se passe ce soir" aria-pressed="true"></button><button type="button" class="dot" aria-label="Lance ton plan en quelques secondes" aria-pressed="false"></button><button type="button" class="dot" aria-label="Le sondage de la bande" aria-pressed="false"></button><button type="button" class="dot" aria-label="La fiche : quand, où, qui y va" aria-pressed="false"></button><button type="button" class="dot" aria-label="Les filtres : selon tes envies" aria-pressed="false"></button></span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="pourquoi-titre">
+        <div class="wrap wide">
+          <h2 id="pourquoi-titre" class="reveal">Pourquoi Ravella</h2>
+          <p class="block-sub reveal">Une appli faite pour sortir, pas pour te garder sur ton écran.</p>
+          <ul class="why-grid">
+            <li class="why reveal" style="--d:0ms">
+              <span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 21V7"/><path d="M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 1 0 0-5C13 2 12 7 12 7z"/></svg></span>
+              <h3>Gratuite, vraiment</h3>
+              <p>Pas d’abonnement, pas de frais : sortir avec tes potes ne te coûte rien de plus.</p>
+            </li>
+            <li class="why reveal" style="--d:70ms">
+              <span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3l18 18"/><path d="M10.6 5.1A10 10 0 0 1 12 5c6 0 9.5 7 9.5 7a17 17 0 0 1-3 3.9M6.6 6.6C4 8.4 2.5 12 2.5 12S6 19 12 19c1.6 0 3-.4 4.3-1"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg></span>
+              <h3>Sans pub de régie</h3>
+              <p>Tes données ne sont jamais revendues. Les offres de lieux partenaires sont toujours signalées.</p>
+            </li>
+            <li class="why reveal" style="--d:140ms">
+              <span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+              <h3>Pensée pour ta sécurité</h3>
+              <p>Réservée aux 18 ans et plus. Signaler ou bloquer en deux gestes, et une équipe qui regarde chaque signalement.</p>
+            </li>
+            <li class="why reveal" style="--d:210ms">
+              <span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20c.6-3 3-5 6-5s5.4 2 6 5M14.5 15.2c.5-.1 1-.2 1.5-.2 3 0 5.4 2 6 5"/></svg></span>
+              <h3>Des sorties, pas des matchs</h3>
+              <p>Ravella n’est pas une appli de rencontres amoureuses : on y monte des plans à plusieurs.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="lieux-titre">
+        <div class="wrap wide">
+          <div class="venue reveal">
+            <div class="photo ph-culture" role="img" aria-label="Une salle d’escalade" style="background-image:url(assets/img/photos/lieux.webp)"></div>
+            <div class="venue-body">
+              <p class="eyebrow">Pour les lieux</p>
+              <h2 id="lieux-titre">Tu gères un lieu ou une activité ?</h2>
+              <p>Ravella t’amène des groupes de potes qui cherchent quoi faire, aussi en semaine. Rien à payer pour t’inscrire, pas d’abonnement.</p>
+              <a class="btn" href="partenaires/index.html">Ravella pour les lieux <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="faq-titre">
+        <div class="wrap">
+          <h2 id="faq-titre" class="reveal">Questions fréquentes</h2>
+          <div class="faq">
+            <details>
+              <summary>C’est vraiment gratuit ?</summary>
+              <div class="answer"><p>Oui, gratuite et sans abonnement. Si un jour des lieux partenaires vendent des places dans l’appli, ce sera toujours indiqué clairement.</p></div>
+            </details>
+            <details>
+              <summary>C’est pour qui ?</summary>
+              <div class="answer"><p>Pour toutes celles et ceux qui ont 18 ans ou plus et envie de sortir, entre potes ou pour rencontrer du monde.</p></div>
+            </details>
+            <details>
+              <summary>Ça marche où ?</summary>
+              <div class="answer"><p>Dans toute la France : tu vois les sorties publiées près de chez toi. Au début, certaines villes seront plus animées que d’autres.</p></div>
+            </details>
+            <details>
+              <summary>Quand sur l’App Store ?</summary>
+              <div class="answer"><p>On vise le début de l’année 2027, sur iPhone. Android viendra plus tard.</p></div>
+            </details>
+          </div>
+          <p class="muted">D’autres questions ? <a href="aide/index.html">Va voir l’aide</a>.</p>
+        </div>
+      </section>
+
+      <section class="final" id="bientot" aria-labelledby="bientot-titre">
+        <div class="glow" aria-hidden="true"></div>
+        <div class="wrap">
+          <h2 id="bientot-titre">Ce soir, on sort.<em>Bientôt sur iPhone.</em></h2>
+          <p class="lead">Ravella arrive sur l’App Store début 2027. En attendant, une question, une idée : <a href="mailto:ravella.officiel@gmail.com">ravella.officiel@gmail.com</a></p>
+          <button class="store center" type="button" disabled aria-disabled="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M11 18.5h2"/></svg><span><small>Bientôt sur</small>l’App Store</span></button>
+        </div>
+      </section>
+    </main>
+    <footer class="foot">
+      <div class="wrap wide">
+        <nav aria-label="Pages du site">
+          <ul>
+          <li><a href="partenaires/index.html">Partenaires</a></li>
+          <li><a href="aide/index.html">Aide</a></li>
+          <li><a href="confidentialite/index.html">Confidentialité</a></li>
+          <li><a href="conditions/index.html">Conditions d’utilisation</a></li>
+          <li><a href="regles/index.html">Règles de la communauté</a></li>
+          <li><a href="mentions-legales/index.html">Mentions légales</a></li>
+          <li><a href="cookies/index.html">Cookies</a></li>
+          </ul>
+        </nav>
+        <p>Ravella · <a href="mailto:ravella.officiel@gmail.com">ravella.officiel@gmail.com</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
